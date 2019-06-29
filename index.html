@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+   <script src="./public/js/modal.js"></script>
+</head>
+
+<body>
+    <div class="barraTop">
+        <a href="#">Eres Miembro </a>
+        <label>/</label>
+        <a href="#">Registrar</a>
+        <label>/</label>
+        <a href="#">Inicio Sesion</a>
+    </div>
+
+    <div class="navbar">
+        <div class="divIcon ">
+            <img class="imgLogo" src="./public/img/logo.png" alt="Intrades">
+        </div>
+
+        <div class="divMenu">
+
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#home" class="active">
+                        <div class="div_menu">
+                            <div>
+                                <img src="./public/img/iconos/analogo.svg" alt="">
+                                <p>ANALOGOS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Dibujo</a>
+                    <a href="#">Diseño Básico</a>
+                    <a href="#">Tipografía</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#home" class="active">
+                        <div class="div_menu">
+                            <div class="divBorder">
+                                <img src="./public/img/logo.png" alt="">
+                                <p>DIGITALES</p>
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Ilustración</a>
+                    <a href="#">Imagen Digital</a>
+                    <a href="#">Fotografía</a>
+                    <a href="#">Diseño Editorial</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#home" class="active">
+                        <div class="div_menu">
+                            <div class="divBorder">
+                                <img src="./public/img/logo.png" alt="">
+                                <p>MULTIMEDIA</p>
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Animación</a>
+                    <a href="#">Audiovisual</a>
+                    <a href="#">Web</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#home" class="active">
+                        <div class="div_menu">
+                            <div class="divBorder">
+                                <img src="./public/img/logo.png" alt="">
+                                <p>PROYECTOS DE <br> INVESTIGACION</p>
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Tesis</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#home" class="active">
+                        <div class="div_menu">
+                            <div class="divBorder">
+                                <img src="./public/img/logo.png" alt="">
+                                <p>PROYECTOS <br> FORMATIVOS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Abalorios</a>
+                    <a href="#">Panzaleo</a>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="barraHead">
+        <div>
+
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./public/img/slider/BANNER.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./public/img/slider/BANNER2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./public/img/slider/BANNER3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <!--     <div class="circles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>  -->
+
+    <div class="barraBuscador">
+        <div class="row">
+            <input type="text" id="txtBuscar" placeholder="Buscar...">
+            <button class="buttonMaterial" onclick="buscar()" type="button">Buscar</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="titleContainer">ULTIMOS PROYECTOS</div>
+
+        <div class="row" id="proyectos">
+            <div class="col-3" onclick="showmodal('0')">
+                <img class="imgCardview" src="./public/img/TRIANGULISMO.jpg" />
+                <div class="col-12">
+                    <div class="card-title">TRIANGULISMO</div>
+                    <p class="card-container">Técnica en donde se sobreponen triángulos sobre una imagen, el resultado
+                        final es en vector</p>
+                </div>
+            </div>
+            <div class="col-3" onclick="showmodal('1')">
+                <img class="imgCardview" src="./public/img/DIBUJO ARTISTICO.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">DIBUJO ARTÍSTICO</h4>
+                    <p class="card-container">Proyecto análogo realizado a mano con lápices y carboncillo sobre un
+                        soporte de cartón de ilustración.
+                    
+                    </p>
+
+                        
+                </div>
+            </div>
+
+            <div class="col-3" onclick="showmodal('2')">
+                <img class="imgCardview" src="./public/img/CIRCULISMO.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">CIRCULISMO</h4>
+                    <p class="card-container">La mama negra detallada con círculos a su alrededor, técnica utilizada en
+                        base a círculos.</p>
+                </div>
+            </div>
+            <div class="col-3" onclick="showmodal('3')">
+                <img class="imgCardview" src="./public/img/COMPOSICION.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">COMPOSICIÓN</h4>
+                    <p class="card-container">Vectorización, mediante una composición orgánica e inorgánica, varios
+                        elementos conforman un todo.</p>
+                </div>
+            </div>
+
+            <div class="col-3" onclick="showmodal('4')">
+                <img class="imgCardview" src="./public/img/MATT PAINTING.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">MATT PAINTING</h4>
+                    <p class="card-container">Elementos que conforma una imagen realista o surrealista, mediante la fusión de varias imágenes en uno.</p>
+                </div>
+            </div>
+
+            <div class="col-3" onclick="showmodal('5')">
+                <img class="imgCardview" src="./public/img/IMAGEN DIGITAL.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">IMAGEN DIGITAL</h4>
+                    <p class="card-container">Pinceles y varias capas de Photoshop sobre una imagen, la utilización de colores y trazos.</p>
+                </div>
+            </div>
+
+            <div class="col-3" onclick="showmodal('6')">
+                <img class="imgCardview" src="./public/img/DIBUJO ARTISTICO 1.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">DIBUJO ARTÍSTICO</h4>
+                    <p class="card-container">Proyecto análogo realizado a mano con lápices y carboncillo sobre un  soporte de cartón de ilustración.</p>
+                </div>
+            </div>
+
+            <div class="col-3" onclick="showmodal('7')">
+                <img class="imgCardview" src="./public/img/MATT PAINTING 1.jpg" />
+                <div class="col-12">
+                    <h4 class="card-title">MATT PAINTING</h4>
+                    <p class="card-container">Elementos que conforma una imagen realista o surrealista, mediante la fusión de varias imágenes en uno.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-4">
+                <div class="footer-title">ACERCA DE NOSOTROS</div>
+                <div class="footer-container">El mundo Academico es cambiante, evoluciona cada dia. Es mucho mas competitivo y exigente.En la Universidad Tecnica de Cotopaxi nos distiguimos por la calidad de nuestros servicios, el profesionalismo de nuestra gente y la manera en que formamos.</div>
+            </div>
+            <div class="col-4">
+                    <div class="footer-title">CONTACTANOS</div>
+                    <div class="footer-container">
+                        Av. Simón Rodrígez s-n Barrio El Ejido Sector San Felipe. <br>
+                        Laacunga - Ecuador <br>
+                        Teléfonos: (593) 032252205 / 22523007/ 2252346. CAREN: 2266164 <br>
+                        LA MANÁ: 2688443. <br>
+                        Av. Los Almendros y calle Pujili sector La Virgen <br>
+                        La Maná - Ecuador <br>
+                        www.utc.edu.ec
+
+
+                    </div>
+            </div>
+            <div class="col-4">
+                    <div class="footer-title">ENLACES EXTERNOS</div>
+                    <div class="footer-container">
+                        <img src="./public/img/iconos/digital.svg" alt="" srcset="">
+                    </div>
+            </div>
+            <div class="col-12">
+                <div class="col-12"> Copyright 2019 - All Rights Reserved - Paúl Valenzuela </div>
+                <div class="copyright">
+                        <img src="./public/img/iconos/facebook.svg" alt="">
+                        <img src="./public/img/iconos/twitter.svg" alt="">
+                        <img src="./public/img/iconos/facebook.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barraHead">
+    </div>
+
+     <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="" id="imgModal" class="imgModal" alt="">
+  
+        <div class="titulo-modal-text">
+                Informacion General
+        </div> <br>
+
+        <div class=" content-modal-text">
+                <span id="nombre"> </span>
+                <span id="tecnica"> </span>
+                <span id="anio"> </span>
+                <span id="autor"> </span>
+                <span id="docente"> </span>
+                <span id="software"> </span>
+                <span id="semestre"> </span>
+            </div>
+
+  </div>
+
+</div> 
+    <footer>
+        <script src="./public/js/main.js"></script>
+    </footer>
+</body>
+
+</html>
